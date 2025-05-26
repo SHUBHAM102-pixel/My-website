@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order from Shop</title>
+    <link rel="stylesheet" href="shop-order.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🍽️ Order from Shop</h1>
+
+        <div class="order-box">
+            <label for="food-select">🍔 Choose Food:</label>
+            <select id="food-select">
+                <option value="Pizza" data-half="150" data-full="250">Pizza</option>
+                <option value="Burger" data-half="80" data-full="120">Burger</option>
+                <option value="Pasta" data-half="100" data-full="180">Pasta</option>
+            </select>
+
+            <div class="size-selection">
+                <label><input type="radio" name="size" value="half" checked> Half</label>
+                <label><input type="radio" name="size" value="full"> Full</label>
+            </div>
+
+            <label>🔢 Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1">
+
+            <button id="add-to-cart">➕ Add to Cart</button>
+        </div>
+
+        <div class="order-summary">
+            <h2>🛒 Order Summary</h2>
+            <ul id="order-list"></ul>
+            <p><strong>Total: ₹<span id="total-price">0</span></strong></p>
+            <button id="order-now">✅ Order Now</button>
+        </div>
+
+        <div class="payment-section">
+            <h2>💳 Payment Method</h2>
+            <button id="online-pay">💵 Online Payment</button>
+            <button id="cash-pay">💰 Cash on Delivery</button>
+        </div>
+    </div>
+
+    <script src="shop-order.js"></script>
+</body>
+</html>

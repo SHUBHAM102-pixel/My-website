@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="tracking.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="tracking-container">
+        <h1 class="tracking-heading">🚀 Track Your Order</h1>
+        <p class="tracking-subheading">Enter your order number to check the status.</p>
+
+        <div class="input-group">
+            <input type="text" id="orderNumber" placeholder="Enter Order Number">
+            <button id="trackBtn" class="btn-track">
+                <i class="fas fa-search"></i> Track Order
+            </button>
+        </div>
+
+        <div class="order-status" id="orderStatus">
+            <p>🔍 Order Status Will Appear Here</p>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="status-steps">
+            <p>📦 Order Placed</p>
+            <p>👨‍🍳 Preparing</p>
+            <p>🚗 Out for Delivery</p>
+            <p>🏠 Delivered</p>
+        </div>
+
+        <p class="estimated-time" id="estimatedTime">⌛ Estimated Delivery: -- mins</p>
+    </div>
+
+    <script src="tracking.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background:  #8B5E3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.order-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.order-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group, .food-selection {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label, .food-selection label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    color: #444;
+}
+
+.input-group input, .food-item select, .food-item input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #e63946;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-submit {
+    width: 100%;
+    background: #e63946;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background: #d62828;
+}
+
+.success-message {
+    display: none;
+    margin-top: 15px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.notices {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
